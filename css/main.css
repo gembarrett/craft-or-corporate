@@ -6,6 +6,13 @@ html {
     line-height: 1.4;
 }
 
+body {
+  background-color: #C6BCB2;
+  color:#F9E4D4;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  /*color: #fff;*/
+}
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -70,18 +77,18 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #BA7C4D;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #BA7C4D;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #BA9978;
 }
 
 .title {
@@ -373,5 +380,14 @@ nav a:hover {
 }
 
 /* custom */
-.craft {background-color: green;}
-.corporate {background-color: red;}
+.craft {background-color: #85CD99;}
+.corporate {background-color: #CF887C;}
+h1, h2, h3 {
+  font-family: "Francois One", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.hide-all {
+  display:none;
+}
+.show-all {
+  display:block;
+}
