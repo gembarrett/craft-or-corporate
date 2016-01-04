@@ -13,27 +13,35 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/awesomplete.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/awesomplete.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="box">
+          <div class="row header-container">
+              <header class="wrapper clearfix">
+                  <h1>Craft or Corporate: a quick glance guide to inform your next pint</h1>
+              </header>
+          </div>
 
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <h1>Craft or Corporate: a quick glance guide to inform your next pint</h1>
-            </header>
-        </div>
-
-        <div class="main-container">
+        <div class="row main-container">
             <div class="main wrapper clearfix">
+              <h2>Start your search here or <a href="#see-all" id="list-link">see all</a></h2>
+              <input type="text" class="awesomplete" name="search-brews" id="search-box" data-list=""></input>
+
+              <div id="see-list">
+
 @@MAIN_CONTENT@@
+              </div>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
-        <div class="footer-container">
+        <div class="row footer-container">
             <footer class="wrapper">
                 <p>Made by <a href="https://github.com/coldclimate/craft-or-corporate">@coldclimate</a></p>
             </footer>
@@ -50,5 +58,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-71747554-1','auto');ga('send','pageview');
         </script>
+      </div>
+
     </body>
 </html>
